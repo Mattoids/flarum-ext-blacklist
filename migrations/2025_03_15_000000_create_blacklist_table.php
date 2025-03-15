@@ -10,8 +10,8 @@ return Migration::createTable(
         $table->increments('id');
 
         $table->tinyInteger('type')->default(0)->common("类型 0-内部 1-公开");
-        $table->string('email')->common("邮箱")->index();
-        $table->string('username')->common("用户名");
+        $table->string('email')->common("邮箱")->unique();
+        $table->string('username')->common("用户名")->index();
 
         // created_at & updated_at
         $table->timestamps();
