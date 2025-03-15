@@ -23,7 +23,7 @@
     },
     "extra": {
         "flarum-extension": {
-            "title": "Flarum Blacklist",
+            "title": "Blacklist",
             "category": "",
             "icon": {
                 "name": "",
